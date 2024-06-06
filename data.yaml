@@ -1,0 +1,13 @@
+train: C:/Users/Admin/Desktop/dog detection.v7i.yolov8/train/images
+val: C:/Users/Admin/Desktop/dog detection.v7i.yolov8/valid/images
+test: C:/Users/Admin/Desktop/dog detection.v7i.yolov8/test/images
+
+nc: 2
+names: ['dog', 'dogs']
+
+roboflow:
+  workspace: project-axi8j
+  project: dog-detection-ysllu
+  version: 7
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/project-axi8j/dog-detection-ysllu/dataset/7
