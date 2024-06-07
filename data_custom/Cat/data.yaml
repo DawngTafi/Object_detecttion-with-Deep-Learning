@@ -1,0 +1,13 @@
+train: D:/Project-For-Artificial-Intelligence/data_custom/Cat/train/images
+val: D:/Project-For-Artificial-Intelligence/data_custom/Cat/train/images
+test: D:/Project-For-Artificial-Intelligence/data_custom/Cat/train/images
+
+nc: 1
+names: ['cat']
+
+roboflow:
+  workspace: worayut-singtotong-1mart
+  project: cat-ignf9
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/worayut-singtotong-1mart/cat-ignf9/dataset/2
