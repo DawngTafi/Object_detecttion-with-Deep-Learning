@@ -28,6 +28,11 @@ ROOT = root_path.relative_to(Path.cwd())
 # Source
 SOURCES_LIST = ["Image", "Video", "Webcam"]
 
+DETECTION_MODEL_TRAIN_DIR = ROOT / 'trainmodel'
+CAT = DETECTION_MODEL_TRAIN_DIR/'cat_model'/'weights'/"best.pt"
+DOG = DETECTION_MODEL_TRAIN_DIR/'dog_model'/'weights'/"best.pt"
+KEY = DETECTION_MODEL_TRAIN_DIR/'key_model'/'weights'/"best.pt"
+PHONE = DETECTION_MODEL_TRAIN_DIR/'phone_model'/'weights'/"best.pt"
 ##D Lmodel config
 DETECTION_MODEL_DIR = ROOT / 'weights' / 'detection'
 YOLOv8n = DETECTION_MODEL_DIR / "yolov8n.pt"
@@ -35,7 +40,6 @@ YOLOv8s = DETECTION_MODEL_DIR / "yolov8s.pt"
 YOLOv8m = DETECTION_MODEL_DIR / "yolov8m.pt"
 YOLOv8l = DETECTION_MODEL_DIR / "yolov8l.pt"
 YOLOv8x = DETECTION_MODEL_DIR / "yolov8x.pt"
-TRAIN_MODEL_DIR = ROOT/ 'weights'
 
 
 DETECTION_MODEL_LIST = [
