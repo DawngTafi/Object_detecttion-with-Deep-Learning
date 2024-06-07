@@ -45,11 +45,6 @@ if data_type == "Coco Datasets":
     if model_type:
         model_path = Path(config.DETECTION_MODEL_DIR, str(model_type))    
     
-    try:
-        model = load_model(model_path)
-    except Exception as e:
-        st.error(f"Unable to load model. Please check the specified path: {model_path}")
-
 if data_type == "Custom Datasets":
     model_type = st.sidebar.selectbox(
         "Select Data",
@@ -63,17 +58,16 @@ if data_type == "Custom Datasets":
         model_path = Path(config.KEY)
     if model_type == "Phone":
         model_path = Path(config.PHONE)         
-    try:
-        model = load_model(model_path)
-    except Exception as e:
-        st.error(f"Unable to load model. Please check the specified path: {model_path}")
-
+    
 st.sidebar.header("Image/Video Config")
 source_selectbox = st.sidebar.selectbox(
     "Select Source",
     config.SOURCES_LIST
 )
-
+try:
+        model = load_model(model_path)
+except Exception as e:
+        st.error(f"Unable to load model. Please check the specified path: {model_path}")
 source_img = None
 if source_selectbox == config.SOURCES_LIST[0]: # Image
     infer_uploaded_image(confidence, model)
