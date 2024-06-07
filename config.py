@@ -10,7 +10,6 @@
 """
 from pathlib import Path
 import sys
-from utils import train_model
 # Get the absolute path of the current file
 file_path = Path(__file__).resolve()
 

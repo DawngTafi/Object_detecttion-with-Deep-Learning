@@ -59,15 +59,17 @@ if data_type == "Custom Datasets":
     if model_type == "Phone":
         model_path = Path(config.PHONE)         
     
-st.sidebar.header("Image/Video Config")
-source_selectbox = st.sidebar.selectbox(
-    "Select Source",
-    config.SOURCES_LIST
-)
+
 try:
         model = load_model(model_path)
 except Exception as e:
         st.error(f"Unable to load model. Please check the specified path: {model_path}")
+        
+st.sidebar.header("Image/Video Config")
+source_selectbox = st.sidebar.selectbox(
+    "Select Source",
+    config.SOURCES_LIST
+)        
 source_img = None
 if source_selectbox == config.SOURCES_LIST[0]: # Image
     infer_uploaded_image(confidence, model)
