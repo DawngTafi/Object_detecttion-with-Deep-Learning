@@ -1,0 +1,13 @@
+train: D:/Project-For-Artificial-Intelligence/data_custom/Key/train/images
+val: D:/Project-For-Artificial-Intelligence/data_custom/Key/valid/images
+test: D:/Project-For-Artificial-Intelligence/data_custom/Key/test/images
+
+nc: 1
+names: ['KEY']
+
+roboflow:
+  workspace: cellp
+  project: key_image-_detection
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/cellp/key_image-_detection/dataset/1

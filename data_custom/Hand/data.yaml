@@ -1,0 +1,13 @@
+train: D:/Project-For-Artificial-Intelligence/data_custom/Hand/train/images
+val: D:/Project-For-Artificial-Intelligence/data_custom/Hand/valid/images
+test: D:/Project-For-Artificial-Intelligence/data_custom/Hand/test/images
+
+nc: 5
+names: ['Right', 'Stop', 'backword', 'forward', 'left']
+
+roboflow:
+  workspace: a-5rb6z
+  project: hand-pljg3
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/a-5rb6z/hand-pljg3/dataset/2
