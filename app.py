@@ -48,7 +48,7 @@ if data_type == "Coco Datasets":
 if data_type == "Custom Datasets":
     model_type = st.sidebar.selectbox(
         "Select Data",
-        ["Cat", "Dog", "Key", "Phone"]        
+        ["Cat", "Dog", "Key", "Hand"]        
     )
     if model_type == "Cat":
         model_path = Path(config.CAT)
@@ -56,8 +56,8 @@ if data_type == "Custom Datasets":
         model_path = Path(config.DOG)
     if model_type == "Key":
         model_path = Path(config.KEY)
-    if model_type == "Phone":
-        model_path = Path(config.PHONE)         
+    if model_type == "Hand":
+        model_path = Path(config.HAND)         
     
 
 try:

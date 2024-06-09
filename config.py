@@ -31,7 +31,7 @@ DETECTION_MODEL_TRAIN_DIR = ROOT / 'trainmodel'
 CAT = DETECTION_MODEL_TRAIN_DIR/'cat_model'/'weights'/"best.pt"
 DOG = DETECTION_MODEL_TRAIN_DIR/'dog_model'/'weights'/"best.pt"
 KEY = DETECTION_MODEL_TRAIN_DIR/'key_model'/'weights'/"best.pt"
-PHONE = DETECTION_MODEL_TRAIN_DIR/'phone_model'/'weights'/"best.pt"
+HAND = DETECTION_MODEL_TRAIN_DIR/'hand_model'/'weights'/"best.pt"
 ##D Lmodel config
 DETECTION_MODEL_DIR = ROOT / 'weights' / 'detection'
 YOLOv8n = DETECTION_MODEL_DIR / "yolov8n.pt"
